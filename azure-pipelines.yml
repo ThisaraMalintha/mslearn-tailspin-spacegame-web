@@ -38,7 +38,7 @@ steps:
     command: 'restore'
     restoreSolution : '**/*.sln'
     feedsToUse: 'select'
-    vstsFeed: '$(System.TeamsProject)/Tainspin.SpaceGame.Web.Models'
+    vstsFeed: '$(System.TeamProject)/Tainspin.SpaceGame.Web.Models'
 
 - task: DotNetCoreCLI@2
   displayName: 'Build the project - $(buildConfiguration)'
